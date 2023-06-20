@@ -25,7 +25,7 @@ int main()
                    if(visit[j]==0 && graph[i][j] && dist[i]+graph[i][j]<=dist[j] && min>dist[i]+graph[i][j])/*visit[j]==0 is used so that
                    the previous minimum weight of the visited node will not be used again
                     i.e, if the current most min weight is from 1->2=3 so min=3 and it will be visited so visit[2]=1
-                     and the next most min weight is from say 2->4=5 or 1->3=5, which is less than 3 and their visit[4] and visit[3] is 0
+                     and the next most min weight is from say 2->4=5 or 1->3=5, which is greater than 3 and their visit[4] and visit[3] is 0
                      so the if condition will be fulfilled and hence the min=3 will not be used again
                     **min value will update the most min weight after checking every possible weights available at the moment*/
                         {
