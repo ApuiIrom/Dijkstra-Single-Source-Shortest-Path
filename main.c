@@ -33,7 +33,6 @@ int main()
                         {
                         dist[j]=dist[i]+graph[i][j];
                         min=dist[j];
-                        a=i;
                         b=j;
                         }
         mincost+=min;
